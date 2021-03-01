@@ -30,11 +30,11 @@ font-0 = Fira Code Nerd Font:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left =bspwm
-modules-center = 
-modules-right = pulseaudio filesystem wlan date
+modules-left =  
+modules-center =  bspwm 
+modules-right =  date
 
-tray-position = center
+tray-position = right
 tray-padding = 2
 
 cursor-click = pointer
@@ -54,9 +54,9 @@ type = internal/bspwm
 pin-workspaces = false
 enable-click = true
 enable-scroll = true
+format-padding = 30
 index-sort = true
 wrapping-scroll = false
-format-padding = 2
 
 format = <label-state>
 format-background = ${colors.background}
@@ -84,6 +84,18 @@ ws-icon-2 = III;
 ws-icon-3 = IV;
 ws-icon-4 = V;
 
+[module/wlan]
+type = internal/network
+interface = wlp0s26u1u4
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #81A1C1 
+label-connected = %essid%
+
+format-disconnected = 睊
+ramp-signal-0 = 直
+
 [module/date]
 type = internal/date
 interval = 5
@@ -97,7 +109,7 @@ time-alt = %H:%M:%S
 format-prefix = 
 format-underline = #81A1C1
 
-label =%date% %time%
+label = %date% %time%
 
 
 [module/pulseaudio]
@@ -126,18 +138,6 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/wlan]
-type = internal/network
-interface = wlp0s26u1u4
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #81A1C1
-label-connected = %essid%
-
-format-disconnected = 睊
-ramp-signal-0 = 直
 
 [settings]
 screenchange-reload = true
