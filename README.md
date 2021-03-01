@@ -1,1 +1,1 @@
-These are my nord themed personal dotfiles
+These are personal dotfiles with some nord themed config
