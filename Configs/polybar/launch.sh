@@ -1,3 +1,3 @@
 #!/bin/bash
 killall -q polybar
-polybar nord-light &
+polybar nord-dark &
