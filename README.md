@@ -1,4 +1,4 @@
-These are my personal dotfiles with some nord themed config
+These are my personal dotfiles
 
 
 Dependencies : FiraCode Nerd Font,Ranger,Polybar,Bspwm
