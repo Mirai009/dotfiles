@@ -1,4 +1,4 @@
 These are my personal dotfiles
 
 
-Dependencies : FiraCode Nerd Font,Ranger,Polybar,Bspwm
+Dependencies : FiraCode Nerd Font,Ranger,Polybar,Bspwm,Dragon
